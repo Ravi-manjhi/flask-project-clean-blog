@@ -1,4 +1,3 @@
-import os
 from flask import Flask, render_template, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
@@ -214,5 +213,4 @@ def contact():
 
 # ------------------------------------ App Run ----------------------------------
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run()
